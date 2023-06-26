@@ -21,5 +21,5 @@ for i in range(second_set):
     num = randint(1, 100)
     second_set_list.append(num)
 
-joined_list = sorted(set(first_set_list + second_set_list))
+joined_list = sorted(set(first_set_list).intersection(second_set_list))
 print(joined_list)
